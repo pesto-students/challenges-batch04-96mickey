@@ -1,11 +1,28 @@
 {
   "extends": "airbnb",
   "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "browser": false,
     "jest": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": false
+    },
+    "sourceType": "module"
+  },
+  "globals": {
+    "strapi": true
   },
   "rules": {
     "no-restricted-syntax": 0,
     "arrow-parens": 0,
-    "import/prefer-default-export": 0
+    "import/prefer-default-export": 0,
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [0, "error", "windows"],
   }
 }
